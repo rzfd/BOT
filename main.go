@@ -11,7 +11,6 @@ import (
 )
 
 func main() {
-	//
 	godotenv.Load()
 	token := os.Getenv("BOT_TOKEN")
 	bot, err := tgbotapi.NewBotAPI(token)
