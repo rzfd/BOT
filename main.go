@@ -6,14 +6,11 @@ import (
 	"os"
 	"strings"
 
-	// "math/rand"
-
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 	"github.com/joho/godotenv"
 )
 
 func main() {
-	//
 	godotenv.Load()
 	token := os.Getenv("BOT_TOKEN")
 	bot, err := tgbotapi.NewBotAPI(token)
